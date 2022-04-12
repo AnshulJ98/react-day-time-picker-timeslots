@@ -63,8 +63,8 @@ typings/
 # parcel
 .cache
 dev
-dist
-lib
+
+
 
 # VSCode
 jsconfig.json
