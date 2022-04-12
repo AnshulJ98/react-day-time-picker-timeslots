@@ -72,7 +72,7 @@ function DayTimePicker({
 
             <TimeSlots
               pickedDay={pickedDay}
-              slotSizeMinutes={timeSlotSizeMinutes}
+              slotSizeMinutes={120}
               validator={timeSlotValidator}
               pickTime={handlePickTime}
             />
@@ -88,6 +88,11 @@ function DayTimePicker({
 
               <p>
                 <ClockIcon /> {dateFns.format(pickedTime, 'HH:mm')}
+                {'-'}
+                {pickedTime.getHours() + 2 == 24
+                  ? '00'
+                  : pickedTime.getHours() + 2}
+                {':00'}
               </p>
 
               {!isDone && (

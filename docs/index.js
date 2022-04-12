@@ -334,7 +334,7 @@ function App() {
         </p>
 
         <Interactive>
-          <DayTimePicker timeSlotSizeMinutes={60} />
+          <DayTimePicker timeSlotSizeMinutes={120} />
 
           <Caption>
             Go ahead and click around, but it&apos;s a semi-functional
@@ -363,7 +363,7 @@ function App() {
           <Container>
             <h3>Pick a Day and Time</h3>
 
-            <DayTimePicker timeSlotSizeMinutes={15} />
+            <DayTimePicker timeSlotSizeMinutes={120} />
           </Container>
         </Interactive>
 
@@ -486,7 +486,7 @@ function App() {
             <h3>Pick a Day and Time</h3>
 
             <DayTimePicker
-              timeSlotSizeMinutes={15}
+              timeSlotSizeMinutes={120}
               isLoading={isScheduling}
               isDone={isScheduled}
               err={scheduleErr}
@@ -540,7 +540,7 @@ function App() {
             <h3>Pick a Day and Time</h3>
 
             <DayTimePicker
-              timeSlotSizeMinutes={15}
+              timeSlotSizeMinutes={120}
               timeSlotValidator={timeSlotValidator}
             />
           </Container>
@@ -704,7 +704,7 @@ function App() {
           <DarkContainer>
             <h3>Pick a Day and Time</h3>
 
-            <DayTimePicker timeSlotSizeMinutes={15} theme={theme} />
+            <DayTimePicker timeSlotSizeMinutes={120} theme={theme} />
           </DarkContainer>
 
           <Caption>

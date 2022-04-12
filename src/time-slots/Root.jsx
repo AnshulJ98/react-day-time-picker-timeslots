@@ -8,7 +8,6 @@ import { List, ListItem } from './List';
 
 function Root({ pickedDay, slotSizeMinutes, validator, pickTime }) {
   const timeSlots = generateTimeSlots(pickedDay, slotSizeMinutes);
-
   return (
     <List>
       {timeSlots.map(slot => {
@@ -20,6 +19,9 @@ function Root({ pickedDay, slotSizeMinutes, validator, pickTime }) {
             onClick={() => isValid && pickTime(slot)}
           >
             {dateFns.format(slot, 'HH:mm')}
+            {'-'}
+            {slot.getHours() + 2 == 24 ? '00' : slot.getHours() + 2}
+            {':00'}
           </ListItem>
         );
       })}

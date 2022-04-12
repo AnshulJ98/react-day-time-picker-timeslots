@@ -31,7 +31,7 @@ function App() {
   return (
     <Container>
       <h3>Pick a Day and Time</h3>
-      <DayTimePicker timeSlotSizeMinutes={15} />
+      <DayTimePicker timeSlotSizeMinutes={120} />
     </Container>
   );
 }`;
@@ -51,7 +51,7 @@ export const codeExample4 = `function App() {
 
   return (
     <DayTimePicker
-      timeSlotSizeMinutes={15}
+      timeSlotSizeMinutes={120}
       isLoading={isScheduling}
       isDone={isScheduled}
       err={scheduleErr}
@@ -97,7 +97,7 @@ export const codeExample6 = `function App() {
 
   return (
     <DayTimePicker
-      timeSlotSizeMinutes={15}
+      timeSlotSizeMinutes={120}
       isLoading={isScheduling}
       isDone={isScheduled}
       err={scheduleErr}
@@ -123,7 +123,7 @@ export const codeExample7 = `function timeSlotValidator(slotTime) {
 function App() {
   return (
     <DayTimePicker
-      timeSlotSizeMinutes={15}
+      timeSlotSizeMinutes={120}
       timeSlotValidator={timeSlotValidator}
     />
   );`;
@@ -174,7 +174,7 @@ function App() {
   return (
     <DarkContainer>
       <h3>Pick a Day and Time</h3>
-      <DayTimePicker timeSlotSizeMinutes={15} />
+      <DayTimePicker timeSlotSizeMinutes={120} />
     </DarkContainer>
   );
 }`;
