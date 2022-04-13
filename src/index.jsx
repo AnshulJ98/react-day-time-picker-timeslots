@@ -104,18 +104,6 @@ function DayTimePicker({
               )}
             </PopupHeader>
 
-            {!isDone ? (
-              <ConfirmButton disabled={isLoading} onClick={handleConfirm}>
-                {isLoading ? loadingText : confirmText}
-              </ConfirmButton>
-            ) : doneText ? (
-              <Success>
-                <p>
-                  <SuccessIcon /> {doneText}
-                </p>
-              </Success>
-            ) : null}
-
             {err && (
               <Failed>
                 <p>
